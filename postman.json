@@ -1,0 +1,98 @@
+{
+    "version": 1,
+    "collections": [
+        {
+            "id": "000d986a-798f-7f60-1cb1-dd19dea2326f",
+            "name": "IBM StandUp",
+            "timestamp": 1442529314439,
+            "requests": [
+                {
+                    "collectionId": "000d986a-798f-7f60-1cb1-dd19dea2326f",
+                    "id": "06e184fa-8150-94f5-22d9-7839481491ab",
+                    "name": "ActionItem",
+                    "description": "",
+                    "url": "{{URL}}/api/v1/actionitems",
+                    "method": "POST",
+                    "headers": "Content-Type: application/json\n",
+                    "data": "{\n  \"title\": \"task-1\",\n  \"standUpId\": \"55fc7bd20bb3bf011ecf08ff\",\n  \"isBlocker\": \"true\",\n  \"resolved\": \"false\"\n}",
+                    "dataMode": "raw",
+                    "timestamp": 0,
+                    "version": 2,
+                    "time": 1442610848385
+                },
+                {
+                    "collectionId": "000d986a-798f-7f60-1cb1-dd19dea2326f",
+                    "id": "3da46d3f-3c07-d310-2163-a49b25c95fa7",
+                    "name": "Login",
+                    "description": "",
+                    "url": "{{URL}}/api/v1/login?username=userTest1&password=userTest1&deviceId=Android-4.4",
+                    "method": "POST",
+                    "headers": "",
+                    "data": [],
+                    "dataMode": "params",
+                    "timestamp": 0,
+                    "responses": [],
+                    "version": 2
+                },
+                {
+                    "collectionId": "000d986a-798f-7f60-1cb1-dd19dea2326f",
+                    "id": "6bf875e7-f0f6-ee23-2754-1f9c47da845e",
+                    "name": "StandUp",
+                    "description": "",
+                    "url": "{{URL}}/api/v1/standups?userId=55fb1787f61ea0b05db9c500",
+                    "method": "POST",
+                    "headers": "Content-Type: application/json\n",
+                    "data": "{\n  \"title\": \"with notifications 3\",\n  \"projectGoals\": \"Transcribe your goals.\",\n  \"callInNumber\": \"(123)-555-5555\",\n  \"timeZoneId\": \"55fb38cabc9904ed79d533b7\",\n  \"startTime\": \"2015-09-17T18:56:04-04:00\",\n  \"status\": 0,\n  \"duration\": \"55fbd0348635c2b47f69dfb1\",\n  \"actionItems\": [],\n  \"participants\": [\"55fb1787f61ea0b05db9c500\"]\n}",
+                    "dataMode": "raw",
+                    "timestamp": 0,
+                    "version": 2,
+                    "time": 1442601222937
+                },
+                {
+                    "collectionId": "000d986a-798f-7f60-1cb1-dd19dea2326f",
+                    "id": "ae9cc6a8-7c39-2d25-a613-9a9557b69ebb",
+                    "name": "StandUp",
+                    "description": "",
+                    "url": "{{URL}}/api/v1/standups/55fc50b74bef44da46f616a9,55fc58de4fa7f0dc4645fa31,55fc58e54fa7f0dc4645fa34",
+                    "method": "DELETE",
+                    "headers": "Content-Type: application/json\n",
+                    "data": "",
+                    "dataMode": "raw",
+                    "timestamp": 0,
+                    "responses": [],
+                    "version": 2
+                },
+                {
+                    "collectionId": "000d986a-798f-7f60-1cb1-dd19dea2326f",
+                    "id": "cf0daa6a-6e82-36be-980b-65c9dc32657c",
+                    "name": "Moods",
+                    "description": "",
+                    "url": "{{URL}}/api/v1/moods",
+                    "method": "POST",
+                    "headers": "Content-Type: application/json\n",
+                    "data": "{\n  \"mood\": 1,\n  \"standUpId\": \"55fc6295e652ff1c54e5da43\"\n}",
+                    "dataMode": "raw",
+                    "timestamp": 0,
+                    "version": 2,
+                    "time": 1442604849303
+                }
+            ]
+        }
+    ],
+    "environments": [
+        {
+            "id": "42f2fddc-4ef2-5dd3-1862-5fecc61d28d9",
+            "name": "Development",
+            "values": [
+                {
+                    "key": "URL",
+                    "value": "http://localhost:3000",
+                    "type": "text"
+                }
+            ],
+            "timestamp": 1442529347145
+        }
+    ],
+    "headerPresets": [],
+    "globals": []
+}
